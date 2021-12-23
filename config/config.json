@@ -1,0 +1,36 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "skc-systems-web-parts-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/skcSystemsWebParts/SkcSystemsWebPartsWebPart.js",
+          "manifest": "./src/webparts/skcSystemsWebParts/SkcSystemsWebPartsWebPart.manifest.json"
+        }
+      ]
+    },
+    "skcsystemdeplist-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/skcsystemdeplist/SkcsystemdeplistWebPart.js",
+          "manifest": "./src/webparts/skcsystemdeplist/SkcsystemdeplistWebPart.manifest.json"
+        }
+      ]
+    },
+    "skcsystemtplist-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/skcsystemtplist/SkcsystemtplistWebPart.js",
+          "manifest": "./src/webparts/skcsystemtplist/SkcsystemtplistWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "SkcSystemsWebPartsWebPartStrings": "lib/webparts/skcSystemsWebParts/loc/{locale}.js",
+    "SkcsystemdeplistWebPartStrings": "lib/webparts/skcsystemdeplist/loc/{locale}.js",
+    "SkcsystemtplistWebPartStrings": "lib/webparts/skcsystemtplist/loc/{locale}.js"
+  }
+}
